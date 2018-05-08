@@ -1,4 +1,4 @@
-(Project originally hosted on [Codeplex](https://r20cpcmg.codeplex.com/))
+(Project originally hosted on [Codeplex](https://r20cpcmg.codeplex.com/) and last updated August 9, 2014)
 
 # Project Description:
 Create HoneyBadger's Custom Power Cards for the Roll20 Virtual Tabletop easier with this GUI tool!
