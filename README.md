@@ -7,11 +7,11 @@ This tool aids in the creation of [Custom Power Cards](https://wiki.roll20.net/C
 
 **Requires the "Custom Power Cards" Roll20 API script**
 
-[[https://github.com/prbarcelon/r20cpcmg/blob/master/wiki/Home_r20cpcmg.png]]
+![](https://github.com/prbarcelon/r20cpcmg/blob/master/wiki/Home_r20cpcmg.png)
 
 _Macro Generator as of 2014-05-11_
 
-[[https://github.com/prbarcelon/r20cpcmg/blob/master/wiki/Home_wms.png]]
+![](https://github.com/prbarcelon/r20cpcmg/blob/master/wiki/Home_wms.png)
 
 _Custom Power Card created with help of tool_
 
