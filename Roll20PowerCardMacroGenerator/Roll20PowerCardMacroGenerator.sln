@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roll20PowerCardMacroGenerator", "Roll20PowerCardMacroGenerator\Roll20PowerCardMacroGenerator.csproj", "{1B64B7AE-9CCD-44D3-9C7C-6BC3F7E06867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratorTest", "GeneratorTest\GeneratorTest.csproj", "{92C6BBD3-5EDD-40F3-9698-71D48F89AA64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B64B7AE-9CCD-44D3-9C7C-6BC3F7E06867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B64B7AE-9CCD-44D3-9C7C-6BC3F7E06867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B64B7AE-9CCD-44D3-9C7C-6BC3F7E06867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B64B7AE-9CCD-44D3-9C7C-6BC3F7E06867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C6BBD3-5EDD-40F3-9698-71D48F89AA64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C6BBD3-5EDD-40F3-9698-71D48F89AA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C6BBD3-5EDD-40F3-9698-71D48F89AA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C6BBD3-5EDD-40F3-9698-71D48F89AA64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

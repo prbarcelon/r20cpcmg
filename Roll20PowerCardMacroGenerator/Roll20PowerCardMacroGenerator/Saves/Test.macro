@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MacroManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Roll20PowerCardMacroGenerator">
+  <SavedTags>
+    <Tag>
+      <CustomID i:nil="true" />
+      <TagValue>TestTag1</TagValue>
+      <ContentValue>TestContent1</ContentValue>
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>TestTag1</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID i:nil="true" />
+      <TagValue>TestTag2</TagValue>
+      <ContentValue>TestContent2</ContentValue>
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>TestTag2</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+  </SavedTags>
+</MacroManager>

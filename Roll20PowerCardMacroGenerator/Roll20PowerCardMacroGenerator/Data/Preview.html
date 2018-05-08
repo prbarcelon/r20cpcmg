@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>test</title>
+    <style>
+        #pc 
+        .inlinerollresult {
+            background-color: #fef68e;
+            border: 2px solid #fef68e;
+            padding: 0 3px 0 3px;
+            font-weight: bold;
+            cursor: help;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <script>
+        var pcMsg = {
+            type: "api",
+            who: "playername",
+            inlinerolls: [],
+            content: "!power --name|Welcome To The --usage|Custom Power Card --action|Macro Generator! "
+        };
+
+        if (!String.prototype.trim) {
+            String.prototype.trim = function () {
+                return this.replace(/^\s+|\s+$/g, '');
+            };
+        }
+
+        String.prototype.sreplace = function (start, length, word) {
+            return this.replace(
+				new RegExp("^(.{" + start + "}).{" + length + "}"),
+				"$1" + word);
+        };
+
+        // From https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+        if (!Object.keys) {
+            Object.keys = (function () {
+                'use strict';
+                var hasOwnProperty = Object.prototype.hasOwnProperty,
+                    hasDontEnumBug = !({ toString: null }).propertyIsEnumerable('toString'),
+                    dontEnums = [
+                      'toString',
+                      'toLocaleString',
+                      'valueOf',
+                      'hasOwnProperty',
+                      'isPrototypeOf',
+                      'propertyIsEnumerable',
+                      'constructor'
+                    ],
+                    dontEnumsLength = dontEnums.length;
+
+                return function (obj) {
+                    if (typeof obj !== 'object' && (typeof obj !== 'function' || obj === null)) {
+                        throw new TypeError('Object.keys called on non-object');
+                    }
+
+                    var result = [], prop, i;
+
+                    for (prop in obj) {
+                        if (hasOwnProperty.call(obj, prop)) {
+                            result.push(prop);
+                        }
+                    }
+
+                    if (hasDontEnumBug) {
+                        for (i = 0; i < dontEnumsLength; i++) {
+                            if (hasOwnProperty.call(obj, dontEnums[i])) {
+                                result.push(dontEnums[i]);
+                            }
+                        }
+                    }
+                    return result;
+                };
+            }());
+        }
+
+        function addPlaceholders(playerMessage) {
+            var string = playerMessage.content;
+            var reg = /\[\[.+?\]\]/g;
+            var matches = [], found;
+            while (found = reg.exec(string)) {
+                matches.push(found);
+            }
+
+            var roll = {
+                "expression": "0",
+                "results": {
+                    "resultType": "M",
+                    "rolls": [
+                        {
+                            "expr": 0,
+                            "type": "M"
+                        }
+                    ],
+                    "total": 0,
+                    "type": "V"
+                }
+            };
+
+            for (var i = matches.length - 1; i >= 0; i--) {
+                playerMessage.content = playerMessage.content.sreplace(matches[i].index, matches[i][0].length, "$[[" + i + "]]");
+                playerMessage.inlinerolls.push(roll);
+            }
+
+            if (playerMessage.inlinerolls.length == 0) {
+                playerMessage.inlinerolls = undefined;
+            }
+            return playerMessage;
+        }
+
+
+        var cb = {};
+        var ab = {};
+        function on(event, callback) {
+            cb = callback;
+        }
+
+        function RunScript(playerMessage) {
+            var pcMsg = {
+                type: playerMessage.type,
+                who: playerMessage.who,
+                inlinerolls: [],
+                content: playerMessage.content
+            };
+            var adjustedMessage = addPlaceholders(pcMsg);
+            am = adjustedMessage;
+            cb(am);
+        }
+
+        function sendChat(who, input, obj) {
+            msgType = "general";
+            if (input.charAt(0) == '!') {
+                msgType = "api";
+            }
+            var message = {
+                type: msgType,
+                who: "playername",
+                inlinerolls: [{}],
+                content: input
+            };
+            var adjustedMessage = [addPlaceholders(message)];
+            if (obj == null | input == "/direct") {
+                var output = adjustedMessage[0].content.replace("/direct ", "");
+                document.getElementById('pc').innerHTML = output;
+            } else {
+                obj(adjustedMessage);
+            }
+        }
+    </script>
+    <script src='CPC.js' type='text/javascript'></script>
+</head>
+<body onload="RunScript(pcMsg)">
+    <div id="pc"></div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+﻿Attack
+Feature
+Pact Boon
+Utility

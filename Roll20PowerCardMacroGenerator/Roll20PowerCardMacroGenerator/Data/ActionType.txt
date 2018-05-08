@@ -1,0 +1,8 @@
+﻿Free Action
+Immediate Interrupt
+Immediate Reaction
+Minor Action
+Move Action
+No Action
+Opportunity Action
+Standard Action

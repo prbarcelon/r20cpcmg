@@ -1,0 +1,19 @@
+﻿Arcane
+Channel Divinity
+Cold
+Divine
+Fear
+Healing
+Implement
+Invigorating
+Martial
+Primal
+Psionic
+Psychic
+Radiant
+Rattling
+Reliable
+Shadow
+Stance
+Weapon
+Zone

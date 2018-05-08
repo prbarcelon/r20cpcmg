@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GameSystem xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Roll20PowerCardMacroGenerator">
+  <Name>DnD4e</Name>
+  <PredefinedTags>
+    <Tag>
+      <CustomID>0</CustomID>
+      <TagValue>name</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Name</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>1</CustomID>
+      <TagValue>usage</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>ComboBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d4p1:string>At-Will</d4p1:string>
+        <d4p1:string>At-Will (Special)</d4p1:string>
+        <d4p1:string>Daily</d4p1:string>
+        <d4p1:string>Daily (Special)</d4p1:string>
+        <d4p1:string>Encounter</d4p1:string>
+        <d4p1:string>Encounter (Special)</d4p1:string>
+      </ContentValueList>
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Usage</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>2</CustomID>
+      <TagValue>action</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>ComboBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d4p1:string>Free Action</d4p1:string>
+        <d4p1:string>Immediate Interrupt</d4p1:string>
+        <d4p1:string>Immediate Reaction</d4p1:string>
+        <d4p1:string>Minor Action</d4p1:string>
+        <d4p1:string>Move Action</d4p1:string>
+        <d4p1:string>No Action</d4p1:string>
+        <d4p1:string>Opportunity Action</d4p1:string>
+        <d4p1:string>Standard Action</d4p1:string>
+      </ContentValueList>
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Action</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>3</CustomID>
+      <TagValue>attack</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Attack</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>4</CustomID>
+      <TagValue>emote</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Emote</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>5</CustomID>
+      <TagValue>txcolor</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>ComboBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d4p1:string>AC</d4p1:string>
+        <d4p1:string>Fort</d4p1:string>
+        <d4p1:string>Reflex</d4p1:string>
+        <d4p1:string>Will</d4p1:string>
+      </ContentValueList>
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Text Color</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>6</CustomID>
+      <TagValue>bgcolor</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>ComboBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <d4p1:string>AC</d4p1:string>
+        <d4p1:string>Fort</d4p1:string>
+        <d4p1:string>Reflex</d4p1:string>
+        <d4p1:string>Will</d4p1:string>
+      </ContentValueList>
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Background Color</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>7</CustomID>
+      <TagValue>leftsub</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>leftsub</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>8</CustomID>
+      <TagValue>rightsub</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>rightsub</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>9</CustomID>
+      <TagValue>dnn</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>dnn</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID>10</CustomID>
+      <TagValue>desc</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>desc</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID i:nil="true" />
+      <TagValue>Target</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Target</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID i:nil="true" />
+      <TagValue>Range</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Range</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID i:nil="true" />
+      <TagValue>Hit</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Hit</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID i:nil="true" />
+      <TagValue>Effect</TagValue>
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Effect</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+    <Tag>
+      <CustomID i:nil="true" />
+      <TagValue i:nil="true" />
+      <ContentValue i:nil="true" />
+      <ControlType>TextBoxControl</ControlType>
+      <IndentLevel>0</IndentLevel>
+      <Position>0</Position>
+      <ContentValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <RequiredTagIDs xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <TagValueList xmlns:d4p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <DisplayName>Custom Tag</DisplayName>
+      <TagDescription i:nil="true" />
+    </Tag>
+  </PredefinedTags>
+</GameSystem>
